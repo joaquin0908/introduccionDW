@@ -7,8 +7,6 @@ body {
 /* Caja central para todo el contenido */
 .main-box {
   max-width: 100%;
-  width: 95vw;
- 
   background: #fff;
 }
 
@@ -47,7 +45,6 @@ body {
   min-width: 120px;
   background-color: #D5C7F2;
   padding: 20px 10px;
-  border-radius: 10px;
   box-sizing: border-box;
 }
 
@@ -75,8 +72,6 @@ body {
   flex: 1;
   background-color: #e6f0fb;
   padding: 10px;
-  border-radius: 10px;
-  margin-left: 16px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -169,15 +164,20 @@ body {
 
 .glider {
   overflow: hidden;
+  
 }
 
 .glider div {
-  background-color: #D5C7F2;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
   font-size: 1.5em;
+
+}
+
+.glider-track{
+    border-radius: 16px
 }
 
 .glider-prev,
@@ -188,12 +188,16 @@ body {
   padding: 10px 20px;
   font-size: 1.5em;
   cursor: pointer;
-  border-radius: 5px;
+ 
 }
 
 .dots {
   text-align: center;
   margin-top: 10px;
+}
+
+.glider img{
+ border-radius: 16px;
 }
 
 /* Responsive: hasta 900px */
