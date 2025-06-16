@@ -1,0 +1,101 @@
+.carta {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.carta h2 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #2c3e50;
+}
+
+.carta .codigo {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.carta .descripcion {
+  margin: 10px 0;
+  color: #444;
+}
+
+.carta .duracion {
+  font-weight: bold;
+  color: #00796b;
+}
+
+.listaPaquetes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.listaPaquetes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.formularioPaquete {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 12px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  max-width: 350px;
+}
+
+.formularioPaquete h5 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.formularioPaquete label {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #555;
+}
+
+.formularioPaquete input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.formularioPaquete button {
+  align-self: flex-end;
+  padding: 8px 18px;
+  background: #e8c4f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formularioPaquete button:hover {
+  background: #e8c4f2;
+}
+
+.botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+}
