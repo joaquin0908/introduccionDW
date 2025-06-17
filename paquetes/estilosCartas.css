@@ -99,3 +99,15 @@
   gap: 10px;
   width: 100%;
 }
+
+/* Responsive para móviles: apila las cartas */
+@media (max-width: 600px) {
+  .listaPaquetes {
+    grid-template-columns: 1fr;
+  }
+  .carta {
+    max-width: 95vw;
+    margin: 12px auto;
+    word-break: break-word;
+  }
+}

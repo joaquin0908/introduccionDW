@@ -1,37 +1,37 @@
+.listaClientes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
 .cartaCliente {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
-  margin: 12px;
+  margin: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   background: #fff;
-  max-width: 300px;
+  max-width: 320px;
+  min-width: 220px;
+  width: 100%;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+  word-break: break-word;
+  flex: 1 1 320px;
 }
 
-.cartaCliente h2 {
-  margin-top: 0;
-  font-size: 1.3em;
-  color: #2c3e50;
-}
-
-.cartaCliente .dni {
-  font-size: 0.9em;
-  color: #888;
-  margin-bottom: 8px;
-}
-
-.cartaCliente .fechaNacimiento,
-.cartaCliente .telefono,
-.cartaCliente .correo {
-  margin: 8px 0;
-  color: #444;
-}
-
-.listaClientes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 0;
-  margin: 0 0 24px 0;
+/* Apilar cartas en una columna en móviles */
+@media (max-width: 700px) {
+  .listaClientes {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .cartaCliente {
+    max-width: 95vw;
+    min-width: 0;
+  }
 }
